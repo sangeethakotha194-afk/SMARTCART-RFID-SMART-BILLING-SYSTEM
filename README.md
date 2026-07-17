@@ -36,7 +36,7 @@ The EM4095 RFID Reader reads the unique RFID tag ID of each product. The LPC2148
 
 ## 📷 Complete System Architecture
 
-<img width="979" height="769" alt="image" src="https://github.com/user-attachments/assets/35066381-cd3c-48ec-ac43-381d847d4e9d" />
+<img width="979" height="769" alt="image" src=" " />
 
 ---
 
