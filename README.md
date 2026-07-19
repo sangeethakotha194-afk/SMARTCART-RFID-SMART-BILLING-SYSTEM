@@ -1,5 +1,5 @@
 # 🛒 Smart Cart – RFID Smart Billing System using LPC2148 ARM7
-<p align="center">
+<div align="center" style="white-space: nowrap;">
 
 ![Language](https://img.shields.io/badge/Language-C%20%7C%20Embedded%20C-blue)
 ![Microcontroller](https://img.shields.io/badge/Microcontroller-LPC2148-success)
@@ -11,10 +11,7 @@
 ![Database](https://img.shields.io/badge/Database-CSV-informational)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-</p>
-
----
-
+</div>
 
 ## ⭐ Overview
 
