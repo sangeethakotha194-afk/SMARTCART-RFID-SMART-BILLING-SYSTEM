@@ -162,6 +162,8 @@ The manager can:
 
 The manager selects Manager Mode through the EINT0 operating menu.
 
+---
+#🔄 Operation Selection
 <p align="center">
 <img src="Images/system_flowchart%20(2).png" width="750">
 </p>
