@@ -1,0 +1,22 @@
+#define PIN 24
+#define RS 19
+#define RW 17
+#define EN 18
+#define CLR_LCD 0X01
+#define DISP_OFF 0X08
+#define RET_CUR_HOME 0X02
+#define DISP_ON 0X0C
+#define DISP_ON_CUR_ON 0X0E
+#define DISP_CUR_BLINK 0X0F
+#define M_8_1LINE 0X30
+#define M_8_2LINE 0X38
+#define M_4_1LINE 0X20
+#define M_4_2LINE 0X28
+#define GOTO_LINE1_POS0 0X80 //GOTO_1LINE_POS0
+#define GOTO_LINE2_POS0 0XC0
+#define GOTO_3_POS0 0X94
+#define GOTO_4_POS0 0X04
+#define SHIFT_CUR_RIGHT 0X06
+#define SHIFT_DISP_LEFT 0X10
+#define SHIFT_DISP_RIGHT 0X04
+#define GOTO_CGRAM 0X40
