@@ -56,6 +56,13 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
 | Power Supply | Provides power to the system |
 
 ---
+# 📦 Hardware Block Diagram
+
+<p align="center">
+<img src="Images/block_diagram.png" width="750">
+</p>
+
+---
 # 💻 Software Requirements
 
 | Software | Purpose |
@@ -206,6 +213,7 @@ The system provides up to **three PIN attempts** for authentication.
 <p align="center">
 <img src="Images/system_flowchart%20(2).png" width="750">
 </p>
+---
 # 🎯 Objectives
 
 - Automate the traditional billing process
@@ -241,133 +249,6 @@ The system provides up to **three PIN attempts** for authentication.
 
 ---
 
-
-
-# 📦 Hardware Block Diagram
-
-<p align="center">
-<img src="Images/block_diagram.png" width="750">
-</p>
-
----
-
-
-
-# 🔄 System Operation
-
-The system initially displays the project name and waits for the user to select an operation.
-
-The user can perform:
-
-- 🛒 Entry / Add Product
-- ➖ Delete Product
-- 🚪 Exit / Checkout
-
----
-
-# 🛒 Entry Mode – Add Product
-
-When the user selects the Entry operation:
-
-1. The system waits for an RFID card.
-2. The RFID reader reads the card number.
-3. The LPC2148 receives the RFID data.
-4. The card number is sent to the Linux application through UART.
-5. The product is searched in the stock database.
-6. Product information and price are retrieved.
-7. The available quantity is updated.
-8. The product is added to the shopping cart.
-9. The product cost is added to the total bill.
-10. The updated information is displayed.
-
----
-
-# ➖ Delete Mode – Remove Product
-
-Delete mode is used to remove a product from the shopping cart.
-
-The process includes:
-
-- Scan the product RFID card
-- Send the card number through UART
-- Search for the product
-- Remove the product from the cart
-- Restore the product quantity in stock
-- Deduct the product price from the total bill
-- Update the billing information
-
----
-
-# 👨‍💼 Manager Mode
-
-Manager mode is used to update the product stock database.
-
-The manager can:
-
-- Add new stock information
-- Update existing product quantity
-- Manage product information
-- Update product details in the database
-
-The manager RFID card is identified by the system and the information is sent to the Linux application for stock management.
-
----
-
-# 📂 Database Files
-
-The SmartCart Billing System maintains four CSV files for storing and updating data during system execution.
-
-### 📦 stock.csv
-
-Maintains product information.
-
-| Field | Description |
-|-------|-------------|
-| Item | Product Name |
-| RFID | Product RFID Number |
-| Quantity | Available Stock |
-| Price | Product Price |
-
-### 🛒 cart.csv
-
-Stores products currently added to the shopping cart.
-
-| Field | Description |
-|-------|-------------|
-| Item | Product Name |
-| RFID | Product RFID Number |
-| Quantity | Selected Quantity |
-| Price | Unit Price |
-| Total | Product Total |
-
-### 🏦 bank.csv
-
-Stores customer bank account information.
-
-| Field | Description |
-|-------|-------------|
-| Card ID | RFID ATM Card Number |
-| Place | Branch Location |
-| IFSC Code | Bank IFSC Code |
-| Bank Name | Bank Name |
-| Account Number | Customer Account Number |
-| Balance | Available Balance |
-| ATM PIN | Customer PIN |
-
-### 🧾 sales.csv
-
-Stores completed transaction details.
-
-| Field | Description |
-|-------|-------------|
-| Bill Number | Unique Bill ID |
-| Date | Transaction Date |
-| Time | Transaction Time |
-| Payment Mode | Cash / Card |
-| Total Amount | Final Bill Amount |
-
----
-
 # 📡 UART Communication
 
 The LPC2148 communicates with the Linux-based billing application using UART.
@@ -396,77 +277,6 @@ CSV Database Files
 | Data Bits | 8 |
 | Stop Bits | 1 |
 | Parity | None |
-
----
-
-# 💳 Card Payment Process
-
-When Card Payment is selected:
-
-1. Customer scans ATM RFID card.
-2. Card number and bill amount are sent to Linux.
-3. Linux requests ATM PIN.
-4. Customer enters PIN using keypad.
-5. PIN is validated.
-6. Account balance is checked.
-7. Amount is deducted.
-8. Transaction is completed.
-9. Sales record is stored.
-
-The customer is allowed **three PIN attempts**.
-
----
-
-# 💵 Cash Payment Process
-
-When Cash Payment is selected:
-
-1. Customer selects Cash option.
-2. Bill amount is displayed.
-3. Customer pays the bill.
-4. Transaction is completed.
-5. Sales record is saved.
-
----
-
-# 🔄 Overall System Flow
-
-```
-System Start
-      │
-      ▼
-Scan RFID Card
-      │
-      ▼
-Send Card Number via UART
-      │
-      ▼
-Search Product Database
-      │
-      ▼
-Retrieve Product Details
-      │
-      ▼
-Add/Delete Product
-      │
-      ▼
-Update Stock
-      │
-      ▼
-Calculate Total Bill
-      │
-      ▼
-Select Payment Mode
-      │
-      ▼
-Cash / Card
-      │
-      ▼
-Complete Transaction
-      │
-      ▼
-Store Sales Information
-```
 
 ---
 
@@ -516,19 +326,6 @@ Store Sales Information
 
 ---
 
-# 🔌 Hardware Used
-
-- LPC2148 ARM7 Microcontroller
-- RFID Reader
-- RFID Cards
-- 16×2 LCD
-- 4×4 Matrix Keypad
-- MAX232
-- USB-to-UART Converter
-- Power Supply
-
----
-
 # 🚀 Future Enhancements
 
 - QR Code Billing
@@ -553,18 +350,22 @@ Store Sales Information
 
 ---
 
+---
+
+# 1️⃣9️⃣ Advantages
+
+```markdown
 # 🎯 Advantages
 
-- Faster Billing Process
-- Eliminates Long Queues
-- Accurate Billing
-- Reduced Human Errors
-- Easy Stock Management
-- Secure Card Transactions
-- User-Friendly Interface
-- Low Maintenance Cost
-
----
+- Reduces billing time
+- Minimizes manual errors
+- Reduces customer waiting time
+- Provides automatic product identification
+- Enables real-time bill calculation
+- Provides stock management
+- Supports multiple payment methods
+- Maintains transaction history
+- Provides an automated retail solution
 
 # 👩‍💻 Developer
 
