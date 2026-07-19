@@ -303,29 +303,34 @@ CSV Database Files
 # 📷 Project Demonstration
 
 <p align="center">
-<img src="Images/output1.png" width="700">
+<img src="Images/output_img1.png" width="700">
 </p>
 
 <p align="center">
-<img src="Images/output2.png" width="450">
+<img src="Images/output_img2.png" width="500">
 </p>
 
 <p align="center">
-<img src="Images/output3.png" width="450">
+<img src="Images/output_img3.png" width="500">
 </p>
 
+<p align="center">
+<img src="Images/output_img4.png" width="500">
+</p>
+
+<p align="center">
+<img src="Images/output_img5.png" width="500">
+</p>
+
+<p align="center">
+<img src="Images/output_img6.png" width="500">
+</p>
+
+<p align="center">
+<img src="Images/output_img7.png" width="700">
+</p>
 ---
 
-# 💻 Software Tools
-
-- Embedded C
-- Linux C Programming
-- Keil μVision IDE
-- Flash Magic
-- GCC Compiler
-- Linux Operating System
-
----
 
 # 🚀 Future Enhancements
 
@@ -351,17 +356,6 @@ CSV Database Files
 
 ---
 
-# 🎯 Advantages
-
-- Reduces billing time
-- Minimizes manual errors
-- Reduces customer waiting time
-- Provides automatic product identification
-- Enables real-time bill calculation
-- Provides stock management
-- Supports multiple payment methods
-- Maintains transaction history
-- Provides an automated retail solution
 
 # 👩‍💻 Developer
 
