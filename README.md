@@ -7,9 +7,10 @@
 ![Technology](https://img.shields.io/badge/Technology-RFID-orange) 
 ![Communication](https://img.shields.io/badge/Communication-UART-blueviolet) 
 ![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey)
-![Database](https://img.shields.io/badge/Database-CSV-informational) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Database](https://img.shields.io/badge/Database-CSV-informational)![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 </p>
+
 ---
 ## ⭐ Overview
 
