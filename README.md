@@ -232,6 +232,7 @@ When Card Payment is selected:
 10. The sales record is stored in `sales.csv`.
 
 The system provides up to **three PIN attempts** for authentication.
+
 ---
 # 💳 Payment Process
 
