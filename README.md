@@ -40,6 +40,21 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
 </p>
 
 ---
+# 🎯 Objectives
+
+- Automate the traditional billing process
+- Identify products using RFID technology
+- Reduce manual billing operations
+- Add products to the shopping cart
+- Remove products from the shopping cart
+- Automatically calculate the total bill
+- Manage product stock information
+- Support cash and card payments
+- Validate ATM PIN securely
+- Maintain bank account information
+- Store completed sales transactions
+
+---
 
 # 🔧 Hardware Requirements
 
@@ -215,21 +230,7 @@ The system provides up to **three PIN attempts** for authentication.
 </p>
 
 ---
-# 🎯 Objectives
 
-- Automate the traditional billing process
-- Identify products using RFID technology
-- Reduce manual billing operations
-- Add products to the shopping cart
-- Remove products from the shopping cart
-- Automatically calculate the total bill
-- Manage product stock information
-- Support cash and card payments
-- Validate ATM PIN securely
-- Maintain bank account information
-- Store completed sales transactions
-
----
 
 # ✨ Project Highlights
 
@@ -249,25 +250,6 @@ The system provides up to **three PIN attempts** for authentication.
 - Sales transaction management
 
 ---
-
-# 📡 UART Communication
-
-The LPC2148 communicates with the Linux-based billing application using UART.
-
-Communication Process:
-
-```
-RFID Reader
-      │
-      ▼
-LPC2148 ARM7
-      │ UART
-      ▼
-Linux C Application
-      │
-      ▼
-CSV Database Files
-```
 
 ### UART Configuration
 
