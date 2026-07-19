@@ -40,6 +40,56 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
 </p>
 
 ---
+
+# 🔧 Hardware Requirements
+
+| Component | Purpose |
+|------------|---------|
+| LPC2148 ARM7 | Main controller |
+| RFID Reader | Reads RFID card numbers |
+| RFID Cards | Used for product and bank card identification |
+| 16×2 LCD | Displays system and billing information |
+| 4×4 Keypad | Used for user input and PIN entry |
+| Switches | Used for Entry, Delete, and Exit operations |
+| MAX232 | Serial communication level conversion |
+| USB-to-UART Converter | Communication with Linux PC |
+| Power Supply | Provides power to the system |
+
+---
+# 💻 Software Requirements
+
+| Software | Purpose |
+|----------|---------|
+| Embedded C | LPC2148 firmware development |
+| Keil μVision | Embedded code development |
+| Flash Magic | Programming LPC2148 |
+| Linux OS | Billing application execution |
+| GCC Compiler | Compiling Linux C application |
+
+---
+# ⚙️ System Working Principle
+
+The SmartCart system works through the following process:
+
+1. The user selects the required operation.
+2. The RFID card is scanned.
+3. The LPC2148 receives the RFID information.
+4. The RFID data is transmitted to the Linux application through UART.
+5. The Linux application searches the corresponding database.
+6. Product or bank information is retrieved.
+7. The required operation is performed.
+8. The database is updated.
+9. The total bill is calculated.
+10. The transaction is completed and stored.
+
+---
+# 📦 System Working Flow
+
+<p align="center">
+<img src="Images/System_Working_Flow.png" width="750">
+</p>
+
+---
 # 🎯 Objectives
 
 - Automate the traditional billing process
@@ -76,21 +126,6 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
 ---
 
 
-# 🔧 Hardware Requirements
-
-| Component | Purpose |
-|------------|---------|
-| LPC2148 ARM7 | Main controller |
-| RFID Reader | Reads RFID card numbers |
-| RFID Cards | Used for product and bank card identification |
-| 16×2 LCD | Displays system and billing information |
-| 4×4 Keypad | Used for user input and PIN entry |
-| Switches | Used for Entry, Delete, and Exit operations |
-| MAX232 | Serial communication level conversion |
-| USB-to-UART Converter | Communication with Linux PC |
-| Power Supply | Provides power to the system |
-
----
 
 # 📦 Hardware Block Diagram
 
@@ -100,13 +135,7 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
 
 ---
 
-# 📦 System Working Flow
 
-<p align="center">
-<img src="Images/System_Working_Flow.png" width="750">
-</p>
-
----
 
 # 🔄 System Operation
 
