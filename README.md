@@ -172,7 +172,7 @@ The **EINT0 interrupt** is used to enter the main operating mode selection.
 </p>
 
 
-# ➖ EINT1 – Delete Mode
+# 📡 EINT1 – Delete Mode
 
 **EINT1** is used to remove products from the shopping cart.
 
