@@ -163,7 +163,7 @@ The manager can:
 The manager selects Manager Mode through the EINT0 operating menu.
 
 ---
-## 🔄 Operation Selection Process
+# 🔄 Operation Selection Process
 
 The **EINT0 interrupt** is used to enter the main operating mode selection.
 
