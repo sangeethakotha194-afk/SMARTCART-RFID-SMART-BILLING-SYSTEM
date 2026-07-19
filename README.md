@@ -213,6 +213,7 @@ The system provides up to **three PIN attempts** for authentication.
 <p align="center">
 <img src="Images/system_flowchart%20(2).png" width="750">
 </p>
+
 ---
 # 🎯 Objectives
 
@@ -350,11 +351,6 @@ CSV Database Files
 
 ---
 
----
-
-# 1️⃣9️⃣ Advantages
-
-```markdown
 # 🎯 Advantages
 
 - Reduces billing time
