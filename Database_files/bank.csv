@@ -1,0 +1,3 @@
+card_id,place,ifsc_code,bank_name,acc_no,balance,pin
+00352530,Hyd,SBIN0001,SBI,123456789,8600,1234
+00000000,Hyd,SBIN0002,SBI,7654324312,6000,4321
