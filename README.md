@@ -2,7 +2,7 @@
 
 <p align="center">
 
-![Language](https://img.shields.io/badge/Language-C%20%7C%20Embedded%20C-blue) ![Controller](https://img.shields.io/badge/Microcontroller-LPC2148-success) ![Architecture](https://img.shields.io/badge/Architecture-ARM7-green) ![Technology](https://img.shields.io/badge/Technology-RFID-orange) ![Communication](https://img.shields.io/badge/Communication-UART-blueviolet) ![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey) ![Database](https://img.shields.io/badge/Database-CSV-informational) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Language](https://img.shields.io/badge/Language-C%20%7C%20Embedded%20C-blue) ![Controller](https://img.shields.io/badge/Microcontroller-LPC2148-success) ![Architecture](https://img.shields.io/badge/Architecture-ARM7-green) ![Technology](https://img.shields.io/badge/Technology-RFID-orange) ![Communication](https://img.shields.io/badge/Communication-UART-blueviolet) ![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey) ![Database](https://img.shields.io/badge/Database-CSV-informational)![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 </p>
 
@@ -441,5 +441,3 @@ Feel free to fork, modify, and improve the project.
 # 🙏 Thank You
 
 Thank you for visiting this project.
-
-If you found this project useful, consider giving this repository a **⭐ Star**.
