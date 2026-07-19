@@ -7,9 +7,10 @@
 ![Technology](https://img.shields.io/badge/Technology-RFID-orange) 
 ![Communication](https://img.shields.io/badge/Communication-UART-blueviolet) 
 ![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey)
-![Database](https://img.shields.io/badge/Database-CSV-informational)![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Database](https://img.shields.io/badge/Database-CSV-informational) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 </p>
+---
 ## ⭐ Overview
 
 An RFID-Based Smart Cart Billing System developed using the **LPC2148 ARM7 Microcontroller**, **EM4095 RFID Reader**, **UART Communication**, and a **Linux-based C application** to automate the shopping and billing process.
