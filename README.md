@@ -162,6 +162,11 @@ The manager can:
 
 The manager selects Manager Mode through the EINT0 operating menu.
 
+<p align="center">
+<img src="Images/system_flowchart%20(2).png" width="750">
+</p>
+
+
 # ➖ EINT1 – Delete Mode
 
 **EINT1** is used to remove products from the shopping cart.
@@ -177,6 +182,11 @@ The manager selects Manager Mode through the EINT0 operating menu.
 7. The stock quantity is restored.
 8. The product price is deducted from the total bill.
 9. The cart and stock information are updated.
+
+<p align="center">
+<img src="Images/system_flowchart%20(2).png" width="750">
+</p>
+
 
 # 🚪 EINT2 – Exit / Checkout Mode
 
@@ -223,15 +233,12 @@ When Card Payment is selected:
 
 The system provides up to **three PIN attempts** for authentication.
 
-# 🔄 Complete System Flowchart
 
 <p align="center">
 <img src="Images/system_flowchart%20(2).png" width="750">
 </p>
 
 ---
-
-
 # ✨ Project Highlights
 
 - LPC2148 ARM7-based embedded system
@@ -248,6 +255,13 @@ The system provides up to **three PIN attempts** for authentication.
 - Bank balance checking
 - Database integration using CSV files
 - Sales transaction management
+
+---
+# 🔄 Complete System Flowchart
+
+<p align="center">
+<img src="Images/system_flowchart%20(2).png" width="750">
+</p>
 
 ---
 
