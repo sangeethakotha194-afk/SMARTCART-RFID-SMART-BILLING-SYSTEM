@@ -164,6 +164,9 @@ The manager selects Manager Mode through the EINT0 operating menu.
 
 ---
 ## 🔄 Operation Selection Process
+
+The **EINT0 interrupt** is used to enter the main operating mode selection.
+
 <p align="center">
 <img src="Images/system_flowchart%20(2).png" width="750">
 </p>
@@ -185,11 +188,16 @@ The manager selects Manager Mode through the EINT0 operating menu.
 8. The product price is deducted from the total bill.
 9. The cart and stock information are updated.
 
+---
+# ➖ Cart Modification Process
+
+The **EINT1 interrupt** is used to remove a product from the shopping cart.
+
 <p align="center">
 <img src="Images/system_flowchart%20(2).png" width="750">
 </p>
 
-
+---
 # 🚪 EINT2 – Exit / Checkout Mode
 
 **EINT2** is used to exit the shopping process and complete the final billing operation.
