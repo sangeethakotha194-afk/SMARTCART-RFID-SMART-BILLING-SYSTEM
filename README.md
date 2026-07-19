@@ -1,17 +1,16 @@
 # 🛒 Smart Cart – RFID Smart Billing System using LPC2148 ARM7
-<div align="center" style="white-space: nowrap;">
+<p align="center">
 
-![Language](https://img.shields.io/badge/Language-C%20%7C%20Embedded%20C-blue)
-![Microcontroller](https://img.shields.io/badge/Microcontroller-LPC2148-success)
-![Architecture](https://img.shields.io/badge/Architecture-ARM7-green)
-![Technology](https://img.shields.io/badge/Technology-RFID-orange)
-![RFID Reader](https://img.shields.io/badge/RFID-EM4095-yellow)
-![Communication](https://img.shields.io/badge/Communication-UART-blueviolet)
-![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey)
-![Database](https://img.shields.io/badge/Database-CSV-informational)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+<img src="https://img.shields.io/badge/Language-C%20%7C%20Embedded%20C-blue">
+<img src="https://img.shields.io/badge/Microcontroller-LPC2148-success">
+<img src="https://img.shields.io/badge/Architecture-ARM7-green">
+<img src="https://img.shields.io/badge/Technology-RFID-orange">
+<img src="https://img.shields.io/badge/Communication-UART-blueviolet">
+<img src="https://img.shields.io/badge/Platform-Linux-lightgrey">
+<img src="https://img.shields.io/badge/Database-CSV-informational">
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen">
 
-</div>
+</p>
 
 ## ⭐ Overview
 
