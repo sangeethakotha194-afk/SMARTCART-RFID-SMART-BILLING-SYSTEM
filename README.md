@@ -156,11 +156,11 @@ The manager selects Manager Mode through the EINT0 operating menu.
 8. The product price is deducted from the total bill.
 9. The cart and stock information are updated.
 
-# 🚪 EINT3 – Exit / Checkout Mode
+# 🚪 EINT2 – Exit / Checkout Mode
 
-**EINT3** is used to exit the shopping process and complete the final billing operation.
+**EINT2** is used to exit the shopping process and complete the final billing operation.
 
-When the user activates EINT3:
+When the user activates **EINT2**:
 
 1. The current cart is displayed.
 2. The final bill amount is calculated.
