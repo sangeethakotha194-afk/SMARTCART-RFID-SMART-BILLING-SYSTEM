@@ -165,25 +165,281 @@ The manager RFID card is identified by the system and the information is sent to
 
 ---
 
-# 💾 Database Management
+# 📂 Database Files
 
-The Linux C application uses database files to store the system information.
+The SmartCart Billing System maintains four CSV files for storing and updating data during system execution.
 
-## 📦 stock.csv
+### 📦 stock.csv
 
-Stores product stock information.
+Maintains product information.
 
 | Field | Description |
 |-------|-------------|
-| Item | Product name |
-| RFID | Unique product RFID number |
-| Quantity | Available product quantity |
-| Price | Product price |
+| Item | Product Name |
+| RFID | Product RFID Number |
+| Quantity | Available Stock |
+| Price | Product Price |
 
-Example:
+### 🛒 cart.csv
 
-```text
-item,Rfid,quantity,price
-Milk,12556450,4,100.00
-Soap,12556451,10,50.00
-Chips,12556452,20,10.00
+Stores products currently added to the shopping cart.
+
+| Field | Description |
+|-------|-------------|
+| Item | Product Name |
+| RFID | Product RFID Number |
+| Quantity | Selected Quantity |
+| Price | Unit Price |
+| Total | Product Total |
+
+### 🏦 bank.csv
+
+Stores customer bank account information.
+
+| Field | Description |
+|-------|-------------|
+| Card ID | RFID ATM Card Number |
+| Place | Branch Location |
+| IFSC Code | Bank IFSC Code |
+| Bank Name | Bank Name |
+| Account Number | Customer Account Number |
+| Balance | Available Balance |
+| ATM PIN | Customer PIN |
+
+### 🧾 sales.csv
+
+Stores completed transaction details.
+
+| Field | Description |
+|-------|-------------|
+| Bill Number | Unique Bill ID |
+| Date | Transaction Date |
+| Time | Transaction Time |
+| Payment Mode | Cash / Card |
+| Total Amount | Final Bill Amount |
+
+---
+
+# 📡 UART Communication
+
+The LPC2148 communicates with the Linux-based billing application using UART.
+
+Communication Process:
+
+```
+RFID Reader
+      │
+      ▼
+LPC2148 ARM7
+      │ UART
+      ▼
+Linux C Application
+      │
+      ▼
+CSV Database Files
+```
+
+### UART Configuration
+
+| Parameter | Value |
+|-----------|-------|
+| Device | /dev/ttyUSB0 |
+| Baud Rate | 9600 bps |
+| Data Bits | 8 |
+| Stop Bits | 1 |
+| Parity | None |
+
+---
+
+# 💳 Card Payment Process
+
+When Card Payment is selected:
+
+1. Customer scans ATM RFID card.
+2. Card number and bill amount are sent to Linux.
+3. Linux requests ATM PIN.
+4. Customer enters PIN using keypad.
+5. PIN is validated.
+6. Account balance is checked.
+7. Amount is deducted.
+8. Transaction is completed.
+9. Sales record is stored.
+
+The customer is allowed **three PIN attempts**.
+
+---
+
+# 💵 Cash Payment Process
+
+When Cash Payment is selected:
+
+1. Customer selects Cash option.
+2. Bill amount is displayed.
+3. Customer pays the bill.
+4. Transaction is completed.
+5. Sales record is saved.
+
+---
+
+# 🔄 Overall System Flow
+
+```
+System Start
+      │
+      ▼
+Scan RFID Card
+      │
+      ▼
+Send Card Number via UART
+      │
+      ▼
+Search Product Database
+      │
+      ▼
+Retrieve Product Details
+      │
+      ▼
+Add/Delete Product
+      │
+      ▼
+Update Stock
+      │
+      ▼
+Calculate Total Bill
+      │
+      ▼
+Select Payment Mode
+      │
+      ▼
+Cash / Card
+      │
+      ▼
+Complete Transaction
+      │
+      ▼
+Store Sales Information
+```
+
+---
+
+# 🔒 System Features
+
+- RFID-Based Product Identification
+- Automatic Billing
+- Real-Time Cart Management
+- Product Addition
+- Product Deletion
+- Automatic Stock Update
+- Manager Mode
+- Cash Payment
+- Card Payment
+- PIN Authentication
+- Bank Balance Verification
+- UART Communication
+- CSV Database Integration
+- Sales Report Generation
+
+---
+
+# 📷 Project Demonstration
+
+<p align="center">
+<img src="Images/output1.png" width="700">
+</p>
+
+<p align="center">
+<img src="Images/output2.png" width="450">
+</p>
+
+<p align="center">
+<img src="Images/output3.png" width="450">
+</p>
+
+---
+
+# 💻 Software Tools
+
+- Embedded C
+- Linux C Programming
+- Keil μVision IDE
+- Flash Magic
+- GCC Compiler
+- Linux Operating System
+
+---
+
+# 🔌 Hardware Used
+
+- LPC2148 ARM7 Microcontroller
+- RFID Reader
+- RFID Cards
+- 16×2 LCD
+- 4×4 Matrix Keypad
+- MAX232
+- USB-to-UART Converter
+- Power Supply
+
+---
+
+# 🚀 Future Enhancements
+
+- QR Code Billing
+- Mobile Payment Integration
+- Cloud Database
+- GSM Bill Notification
+- Wi-Fi Connectivity
+- IoT-Based Inventory Monitoring
+- Mobile Shopping Application
+
+---
+
+# 🌍 Applications
+
+- Smart Shopping Carts
+- Supermarkets
+- Shopping Malls
+- Retail Stores
+- Department Stores
+- Automated Billing Systems
+- Inventory Management
+
+---
+
+# 🎯 Advantages
+
+- Faster Billing Process
+- Eliminates Long Queues
+- Accurate Billing
+- Reduced Human Errors
+- Easy Stock Management
+- Secure Card Transactions
+- User-Friendly Interface
+- Low Maintenance Cost
+
+---
+
+# 👩‍💻 Developer
+
+**Kotha Sangeetha**
+
+**Bachelor of Technology**
+
+**Electronics and Communication Engineering**
+
+**2025 Graduate**
+
+---
+
+# 📜 License
+
+This project is developed for **academic and educational purposes**.
+
+Feel free to fork, modify, and improve the project.
+
+---
+
+# 🙏 Thank You
+
+Thank you for visiting this project.
+
+If you found this project useful, consider giving this repository a **⭐ Star**.
