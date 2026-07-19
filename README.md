@@ -90,6 +90,122 @@ The SmartCart system works through the following process:
 </p>
 
 ---
+# 🔄 Operating Modes
+
+The SmartCart system uses external interrupts to select different operating modes.
+
+| Interrupt | Operating Mode | Function |
+|-----------|----------------|----------|
+| EINT0 | Customer / Manager Mode | Add products or manage stock |
+| EINT1 | Delete Mode | Remove products from the cart |
+| EINT3 | Exit / Checkout Mode | Complete billing through cash or card payment |
+
+# 🛒 EINT0 – Customer / Manager Mode
+
+**EINT0** is used to enter the main operating modes of the SmartCart system.
+
+When the user activates **EINT0**, the system provides two options:
+
+- 🛒 Customer Mode
+- 👨‍💼 Manager Mode
+
+The user selects the required mode according to the operation to be performed.
+## 🛒 Customer Mode
+
+Customer Mode is used to add products to the shopping cart.
+
+### Working Process
+
+1. User selects Customer Mode through EINT0.
+2. The product RFID card is scanned.
+3. The LPC2148 reads the RFID number.
+4. The RFID number is transmitted through UART.
+5. The Linux application searches `stock.csv`.
+6. Product information is retrieved.
+7. The product is added to the cart.
+8. The stock quantity is updated.
+9. The total bill is calculated.
+10. The updated cart information is stored.
+
+## 👨‍💼 Manager Mode
+
+Manager Mode is used for stock and product management.
+
+The manager can:
+
+- Add new products
+- Update existing stock quantities
+- Modify product information
+- Maintain the product database
+
+The manager selects Manager Mode through the EINT0 operating menu.
+
+# ➖ EINT1 – Delete Mode
+
+**EINT1** is used to remove products from the shopping cart.
+
+### Working Process
+
+1. User activates EINT1.
+2. The system enters Delete Mode.
+3. The product RFID card is scanned.
+4. The RFID number is transmitted through UART.
+5. The product is searched in the cart.
+6. The selected product is removed.
+7. The stock quantity is restored.
+8. The product price is deducted from the total bill.
+9. The cart and stock information are updated.
+
+# 🚪 EINT3 – Exit / Checkout Mode
+
+**EINT3** is used to exit the shopping process and complete the final billing operation.
+
+When the user activates EINT3:
+
+1. The current cart is displayed.
+2. The final bill amount is calculated.
+3. The system enters the payment selection.
+4. The user selects a payment method:
+
+   - 💵 Cash Payment
+   - 💳 Card Payment
+
+5. The selected payment is processed.
+6. The transaction is completed.
+7. The sales record is stored in `sales.csv`.
+
+## 💵 Cash Payment
+
+When Cash Payment is selected:
+
+1. The final bill amount is calculated.
+2. The customer selects Cash Payment.
+3. The cash transaction is processed.
+4. The transaction is completed.
+5. The sales information is stored in `sales.csv`.
+
+## 💳 Card Payment
+
+When Card Payment is selected:
+
+1. The customer scans the bank RFID card.
+2. The card number is read.
+3. The card information is transmitted through UART.
+4. The system requests the ATM PIN.
+5. The customer enters the PIN.
+6. The PIN is validated.
+7. The account balance is checked.
+8. The bill amount is deducted.
+9. The transaction is completed.
+10. The sales record is stored in `sales.csv`.
+
+The system provides up to **three PIN attempts** for authentication.
+
+# 🔄 Complete System Flowchart
+
+<p align="center">
+<img src="Images/system_flowchart%20(2).png" width="750">
+</p>
 # 🎯 Objectives
 
 - Automate the traditional billing process
