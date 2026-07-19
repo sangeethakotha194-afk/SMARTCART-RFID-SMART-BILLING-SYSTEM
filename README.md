@@ -2,34 +2,44 @@
 
 <p align="center">
 
-![Language](https://img.shields.io/badge/Language-C%20%7C%20Embedded%20C-blue) ![Controller](https://img.shields.io/badge/Microcontroller-LPC2148-success) ![Architecture](https://img.shields.io/badge/Architecture-ARM7-green) ![Technology](https://img.shields.io/badge/Technology-RFID-orange) ![Communication](https://img.shields.io/badge/Communication-UART-blueviolet) ![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey) ![Database](https://img.shields.io/badge/Database-CSV-informational)![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Language](https://img.shields.io/badge/Language-C%20%7C%20Embedded%20C-blue) ![Microcontroller](https://img.shields.io/badge/Microcontroller-LPC2148-success) ![Architecture](https://img.shields.io/badge/Architecture-ARM7-green) ![Technology](https://img.shields.io/badge/Technology-RFID-orange) ![Communication](https://img.shields.io/badge/Communication-UART-blueviolet) ![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey) ![Database](https://img.shields.io/badge/Database-CSV-informational) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 </p>
 
 ---
-
 # 📌 Project Description
 
-The **SmartCart – RFID Smart Billing System** is an embedded automation project developed using the **LPC2148 ARM7 microcontroller**, RFID technology, UART communication, and a Linux-based C application.
+The **SmartCart – RFID Smart Billing System** is an automated shopping and billing system developed using the **LPC2148 ARM7 microcontroller**, RFID technology, UART communication, and a Linux-based C application.
 
-The system automates the shopping and billing process by identifying products using RFID cards. The LPC2148 communicates with a Linux C application through UART. The Linux application manages the product stock, shopping cart, bank information, billing, and sales transaction data.
+The system identifies products using RFID cards, manages the shopping cart, updates stock quantities, calculates the total bill, and supports cash and card-based payment processing.
 
-The system supports:
+The LPC2148 communicates with the Linux C application through UART, while CSV files are used to maintain product, cart, bank, and sales information.
+
+---
+# ✨ Key Features
 
 - 🏷️ RFID-based product identification
-- 🛒 Product addition
-- ➖ Product deletion
-- 📦 Stock management
+- 🛒 Automatic product addition
+- ➖ Product removal
+- 📦 Stock quantity management
 - 💰 Automatic bill calculation
 - 👨‍💼 Manager mode
 - 💵 Cash payment
 - 💳 Card payment
-- 🔐 PIN validation
+- 🔐 PIN authentication
 - 🏦 Bank balance verification
-- 🧾 Sales record management
+- 📡 UART communication
+- 💾 CSV-based database management
+- 🧾 Sales transaction storage
+
+ ---
+ # 🏗️ System Architecture
+
+<p align="center">
+<img src="Images/system_architecture.png" width="800">
+</p>
 
 ---
-
 # 🎯 Objectives
 
 - Automate the traditional billing process
@@ -65,13 +75,6 @@ The system supports:
 
 ---
 
-# 🏗️ System Architecture
-
-<p align="center">
-<img src="Images/system_architecture.png" width="800">
-</p>
-
----
 
 # 🔧 Hardware Requirements
 
