@@ -120,7 +120,7 @@ The SmartCart system uses external interrupts to select different operating mode
 |-----------|----------------|----------|
 | EINT0 | Customer / Manager Mode | Add products or manage stock |
 | EINT1 | Delete Mode | Remove products from the cart |
-| EINT3 | Exit / Checkout Mode | Complete billing through cash or card payment |
+| EINT2 | Exit / Checkout Mode | Complete billing through cash or card payment |
 
 # 🛒 EINT0 – Customer / Manager Mode
 
