@@ -80,7 +80,8 @@ char uart_rx(void)
 }
 
 //UART TRANSMIT CHARACTER
-void uart_tx(char ch){
+void uart_tx(char ch)
+{
         write(uart_fd,&ch,1);
 }
 
@@ -292,8 +293,8 @@ void add_to_cart(char *rfid)
         if(strcmp(cart[i].id,rfid)==0)
         {
             qty[i]++;
-            db[index].stock--;
-            update_stock();
+          //  db[index].stock--;
+          //  update_stock();
             update_cart();
             printf("\nPRODUCT UPDATED\n");
             return;
@@ -302,8 +303,8 @@ void add_to_cart(char *rfid)
  cart[cart_size] = db[index];
     qty[cart_size] = 1;
     cart_size++;
-    db[index].stock--;
-    update_stock();
+   // db[index].stock--;
+   // update_stock();
     update_cart();
     printf("\nPRODUCT ADDED\n");
 }
@@ -323,7 +324,7 @@ void delete_product(char *rfid)
         if(strcmp(cart[i].id,rfid)==0)
         {
             qty[i]--;
-            db[index].stock++;
+            //db[index].stock++;
             if(qty[i] <= 0)
             {
                 for(int j=i;j<cart_size-1;j++)
@@ -333,7 +334,7 @@ void delete_product(char *rfid)
                 }
                 cart_size--;
             }
-            update_stock();
+            //update_stock();
             update_cart();
             printf("\nITEM DELETED\n");
             return;
@@ -405,6 +406,17 @@ chance:memset(buf,0,sizeof(buf));
                     if(b[i].balance >= total)
                     {
                         b[i].balance -= total;
+						 //-------------------------------------------------------
+                        for(int k=0;k<cart_size;k++)
+                        {
+                                int db_idx=find_product(cart[k].id);
+                                if(db_idx!=1)
+                                {
+                                        db[db_idx].stock-=qty[k];
+                                }
+                        }
+                        update_stock();
+                        //--------------------------------------------------------
                         update_bank();
                         save_sales(card_no,"ONLINE");
                         cart_size = 0;
@@ -472,6 +484,17 @@ l1:memset(buf,0,sizeof(buf));
     // SUCCESS
     if(result == 1)
     {
+		 //-------------------------------------------------------
+                        for(int k=0;k<cart_size;k++)
+                        {
+                                int db_idx=find_product(cart[k].id);
+                                if(db_idx!=1)
+                                {
+                                        db[db_idx].stock-=qty[k];
+                                }
+                        }
+                        update_stock();
+                        //--------------------------------------------------------
         save_sales("CASH","CASH");
         cart_size = 0;
         printf("PAID SUCCESSFULLY\n");
