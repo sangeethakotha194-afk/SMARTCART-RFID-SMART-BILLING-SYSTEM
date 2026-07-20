@@ -65,14 +65,14 @@ void RFID(void)
                                                             buf[strcspn(buf,"$\r\n")] = '\0';
                                                             status=atoi(buf);
                                                             if(status==0)
-                                                                                {
-                                                                      entry_mode=0;
+                                                            {
+                                                                entry_mode=0;
                                                             }
                                                             else
-                                                                                {
-                                                                                               entry_mode=1;
-                                                        }
-                                                     }
+                                                            {
+                                                                entry_mode=1;  
+                                                            }
+                                 }
                        // CUSTOMER CARD
                                 else
                                 {
@@ -149,33 +149,33 @@ if(exit_mode == 1)
              delay_s(5);
              exit_mode = 0;
                return;
-              }
+          }
  //if cart having the items then proceed to the payment
           else
-                  {
-                        cmdLCD(0x01);
-                        cmdLCD(0x80);
-                //payment in cash or online
+         {
+           cmdLCD(0x01);
+           cmdLCD(0x80);
+     //payment in cash or online
          strLCD("1:Cash 2:Card");
           while(exit_mode==1)
-                         {
+            {
               if(entry_mode==1 || delete_mode==1)
-                          {
-                                       exit_mode=0;
-                                break;
+                 {
+                         exit_mode=0;
+                        break;
                   }
-                          choice = keyscan();
-                                if(choice==0)
-                                {
-                                        delay_ms(10);
-                                continue;
-                                }
-                            if(choice == '1')
+                        choice = keyscan();
+                         if(choice==0)
+                          {
+                                  delay_ms(10);
+                                  continue;
+                          }
+                         if(choice == '1')
                             {
                                 cash_payment_frontend();
                                 exit_mode=0;
-                break;
-                }
+                                break;
+                            }
                  // ONLINE MODE
                             else if(choice == '2')
                             {
@@ -184,10 +184,10 @@ if(exit_mode == 1)
                                         break;
                             }
 
-                        }
-                         cmdLCD(0x01);
-                 }
-   }
+                   }
+                  cmdLCD(0x01);
+         }
+     }
 }
 
 //cash payment
@@ -220,8 +220,8 @@ l1:cmdLCD(0x01);
     strLCD("Enter Money:");
     cmdLCD(0xC0);
     entered_money=ReadNum();
-    if(entered_money==total)
-        {
+ if(entered_money==total)
+  {
         uart0_tx('1');
         uart0_tx('$');
         cmdLCD(0x01);
@@ -236,10 +236,10 @@ l1:cmdLCD(0x01);
           delay_s(10);
                 return;
                 //exit_mode=0;
-    }
+  }
         //if entered amount is greater than actual amount
-    else if(entered_money>total)
-        {
+ else if(entered_money>total)
+  {
         int return_money=entered_money-total;
         uart0_tx('1');
         uart0_tx('$');
