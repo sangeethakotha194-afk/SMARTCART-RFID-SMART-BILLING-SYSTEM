@@ -194,7 +194,7 @@ The **EINT0 interrupt** is used to enter the main operating mode selection.
 The **EINT1 interrupt** is used to remove a product from the shopping cart.
 
 <p align="center">
-<img src="Images/system_flowchart%20(2).png" width="750">
+<img src="Images/Delete_eint1.png" width="750">
 </p>
 
 ---
