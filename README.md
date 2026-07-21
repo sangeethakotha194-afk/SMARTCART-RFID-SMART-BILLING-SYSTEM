@@ -248,7 +248,7 @@ The system provides up to **three PIN attempts** for authentication.
 
 After completing the shopping process, the system enters the payment process.
 <p align="center">
-<img src="Images/Payment_process.png" width="750">
+<img src="Images/Payment_eint2.png" width="750">
 </p>
 
 ---
