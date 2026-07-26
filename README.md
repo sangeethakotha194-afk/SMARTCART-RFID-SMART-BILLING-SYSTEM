@@ -36,7 +36,7 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
  # 🏗️ System Architecture
 
 <p align="center">
-<img src="Images/system_working_flow.png" width="700">
+<img src="" width="700">
 </p>
 
 ---
@@ -108,7 +108,7 @@ The SmartCart system works through the following process:
 # 📦 System Working Flow
 
 <p align="center">
-<img src="Images/System_Working_Flow.png" width="750">
+<img src="Images/system_working_flow.png" width="700">
 </p>
 
 ---
