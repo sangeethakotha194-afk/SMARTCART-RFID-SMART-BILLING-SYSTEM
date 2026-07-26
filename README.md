@@ -74,7 +74,7 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
 # 📦 Hardware Block Diagram
 
 <p align="center">
-<img src="Images/block_diagram.png" width="750">
+<img src="Images/SC_Block_diagram.png" width="750">
 </p>
 
 ---
