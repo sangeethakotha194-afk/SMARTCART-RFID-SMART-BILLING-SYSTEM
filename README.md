@@ -36,7 +36,7 @@ The LPC2148 communicates with the Linux C application through UART, while CSV fi
  # 🏗️ System Architecture
 
 <p align="center">
-<img src="Images/system_working_flow.png" width="800">
+<img src="Images/system_working_flow.png" width="700">
 </p>
 
 ---
