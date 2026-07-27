@@ -312,6 +312,7 @@ After completing the shopping process, the system enters the payment process.
 
 <p align="left">
 <img src="Images/1st img.jpeg" width="400">
+ <img src="Images/2nd img.jpeg" width="400">
 </p>
 
 <p align="left">
