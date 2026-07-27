@@ -311,7 +311,7 @@ After completing the shopping process, the system enters the payment process.
 # 📷 Project Demonstration
 
 <p align="center">
-<img src="Images/output_img1.png" width="700">
+<img src="Images/1st img.jpeg" width="300">
 </p>
 
 <p align="center">
