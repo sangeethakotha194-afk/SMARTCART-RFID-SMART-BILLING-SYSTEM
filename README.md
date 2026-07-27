@@ -317,11 +317,12 @@ After completing the shopping process, the system enters the payment process.
 
 <p align="center">
 <img src="Images/4th img.jpeg" width="400">
+ <img src="Images/5th img.jpeg" width="400">
 </p>
 
 <p align="center">
 <img src="Images/output_img5.png" width="500">
- <img src="Images/output_img5.png" width="500">
+ 
 </p>
 
 <p align="center">
