@@ -166,7 +166,7 @@ The manager selects Manager Mode through the EINT0 operating menu.
 
 The **EINT0 interrupt** is used to enter the main operating mode selection.
 
-<p align="center">
+<p align="left">
 <img src="Images/Entry_eint0.png" width="750">
 </p>
 
