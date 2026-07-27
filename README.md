@@ -311,11 +311,11 @@ After completing the shopping process, the system enters the payment process.
 # 📷 Project Demonstration
 
 <p align="left">
-<img src="Images/1st img.jpeg" width="400">
+<img src="Images/1st img.jpeg" width="500">
 </p>
 
 <p align="center">
-<img src="Images/output_img2.png" width="500">
+<img src="Images/2nd img.jpeg" width="500">
 </p>
 
 <p align="center">
