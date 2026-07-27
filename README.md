@@ -328,7 +328,7 @@ After completing the shopping process, the system enters the payment process.
 </p>
 
 <p align="center">
- <img src="Images/8th img.jpeg" width="400">
+ <img src="Images/8th img.jpeg" width="500">
 <img src="Images/WhatsApp Image 2026-07-22 at 12.51.22 PM (7).jpeg" width="300">
 </p>
 
