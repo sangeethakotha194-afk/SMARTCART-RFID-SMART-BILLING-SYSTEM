@@ -311,13 +311,13 @@ After completing the shopping process, the system enters the payment process.
 # 📷 Project Demonstration
 
 <p align="center">
-<img src="Images/1st img.jpeg" width="400">
- <img src="Images/2nd img.jpeg" width="400">
+<img src="Images/1st img.jpeg" width="400"> 
+<img src="Images/2nd img.jpeg" width="400">
 </p>
 
 <p align="center">
-<img src="Images/3rd img.jpeg" width="48%">
- <img src="Images/4th img.jpeg" width="48%">
+<img src="Images/3rd img.jpeg" width="300">
+<img src="Images/4th img.jpeg" width="400">
 </p>
 
 <p align="center">
