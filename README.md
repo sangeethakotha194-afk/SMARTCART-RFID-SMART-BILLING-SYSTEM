@@ -166,7 +166,7 @@ The manager selects Manager Mode through the EINT0 operating menu.
 
 The **EINT0 interrupt** is used to enter the main operating mode selection.
 
-<p align="left">
+<p align="center">
 <img src="Images/Entry_eint0.png" width="750">
 </p>
 
@@ -310,7 +310,7 @@ After completing the shopping process, the system enters the payment process.
 
 # 📷 Project Demonstration
 
-<p align="center">
+<p align="left">
 <img src="Images/1st img.jpeg" width="400">
 </p>
 
