@@ -8,7 +8,6 @@
 
 ---
 # 📌 Project Description
-https://github.com/sangeethakotha194-afk/SMARTCART-RFID-SMART-BILLING-SYSTEM/edit/main/README.md
 The **SmartCart – RFID Smart Billing System** is an automated shopping and billing system developed using the **LPC2148 ARM7 microcontroller**, RFID technology, UART communication, and a Linux-based C application.
 
 The system identifies products using RFID cards, manages the shopping cart, updates stock quantities, calculates the total bill, and supports cash and card-based payment processing.
