@@ -107,7 +107,7 @@ The SmartCart system works through the following process:
 # 📦 System Working Flow
 
 <p align="center">
-<img src="Images/SC_system_flow_diagram.png" width="700">
+<img src="Images/Smart_system_flow_diagram.png" width="700">
 </p>
 
 ---
@@ -167,7 +167,7 @@ The manager selects Manager Mode through the EINT0 operating menu.
 The **EINT0 interrupt** is used to enter the main operating mode selection.
 
 <p align="center">
-<img src="Images/Entry_eint0.png" width="750">
+<img src="Images/Smart_entry mode.png" width="750">
 </p>
 
 
@@ -193,7 +193,7 @@ The **EINT0 interrupt** is used to enter the main operating mode selection.
 The **EINT1 interrupt** is used to remove a product from the shopping cart.
 
 <p align="center">
-<img src="Images/Delete_eint1.png" width="750">
+<img src="Images/Smart_delete mode.png" width="750">
 </p>
 
 ---
