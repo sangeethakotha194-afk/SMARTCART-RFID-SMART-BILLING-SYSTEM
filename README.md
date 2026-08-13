@@ -272,7 +272,7 @@ After completing the shopping process, the system enters the payment process.
 # 🔄 Complete System Flowchart
 
 <p align="center">
-<img src="Images/Interrupt process_system_flow.png" width="750">
+<img src="Images/Smart_complete_flowchart.png" width="750">
 </p>
 
 ---
